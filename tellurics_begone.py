@@ -81,7 +81,7 @@ def remove_tellurics(spectrum, resolution=None, max_shift=None, fit_bounds=None,
     Remove telluric features from an astronomical spectrum.
     Telluric models are expected to be stored in test_spectra/
 
-    :param spectrum: array, 2-D array-like of shape (:, 2), raw spectrum in two columns for x and y
+    :param spectrum: 2-D array-like of shape [:, 2], raw spectrum in two columns for x and y
     :param resolution: optional, defaults to 10, spectral resolution in angstroms
     :param max_shift: optional, defaults to 2*resolution, max wavelength shift for fitting
     :param fit_bounds: optional, 2-length array-like, defaults to None, lower and upper wavelength bounds for fitting
